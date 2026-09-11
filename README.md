@@ -1,6 +1,6 @@
 # Sistema de Control de Vuelos y Tripulación en una Aerolínea Comercial
 
-Base de Datos - Unidad 1 - Ejercicio 2
+Base de Datos - Unidad 2 - Ejercicio 2
 
 ## Consigna
 Modelar mediante el Modelo Entidad-Relación (MER) la operación de vuelos de una aerolínea regional, incluyendo la administración de aeronaves, programación de vuelos, asignación de personal (pilotos y auxiliares) y gestión de reservas de pasajeros, garantizando el cumplimiento de normativas aeronáuticas.
