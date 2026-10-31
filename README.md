@@ -30,3 +30,25 @@ Modelar mediante el Modelo Entidad-Relación (MER) la operación de vuelos de un
 
 ## Resultado
 <img width="792" height="1142" alt="BaseDeDatos-U1-Ej02-SistemaAerolinea" src="https://github.com/user-attachments/assets/0b1f5573-f29e-4c88-b346-42a6b7fa5903" />
+
+---
+
+## Normalización
+
+Se normaliza el documento `Vuelo` con sus registros de `Tripulacion`. En todas las tablas la PK va en la primera columna y las FK al final. Los datos son de ejemplo.
+
+**Forma 0.** Una sola tabla con todo junto. Hay celdas con listas: cada vuelo puede tener varios registros de tripulacion.
+
+![Forma 0](normalizacion/00-forma-0.png)
+
+**1FN.** Cada elemento de la lista pasa a su propia fila y la clave queda compuesta: (`id_vuelo`, `id_personal`).
+
+![1FN](normalizacion/01-1fn.png)
+
+**2FN.** Los datos de vuelo dependen solo de `id_vuelo` y los de personal solo de `id_personal`. Se separan en `Vuelo` y `Personal`; `Tripulacion` queda con la clave compuesta y lo que depende de ambos.
+
+![2FN](normalizacion/02-2fn.png)
+
+**3FN.** Los datos de `Avion` dependen de su propio identificador y no de la PK de vuelo, así que pasan a tablas aparte. En el modelo final cada tabla usa su id propio.
+
+![3FN](normalizacion/03-3fn.png)
