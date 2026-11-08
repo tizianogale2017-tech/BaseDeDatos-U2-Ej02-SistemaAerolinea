@@ -29,7 +29,10 @@ Modelar mediante el Modelo Entidad-Relación (MER) la operación de vuelos de un
 - Se separó completamente Personal en una sola entidad (sin subdividir Pilotos/Auxiliares) porque ambos comparten los mismos atributos; la distinción se realiza mediante categoría_profesional.
 
 ## Resultado
-<img width="792" height="1142" alt="BaseDeDatos-U1-Ej02-SistemaAerolinea" src="https://github.com/user-attachments/assets/0b1f5573-f29e-4c88-b346-42a6b7fa5903" />
+
+![Diagrama](captura.png)
+
+Atributo agregado para llegar al id más 5: `anio_fabricacion` (Avión).
 
 ---
 
