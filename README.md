@@ -32,8 +32,6 @@ Modelar mediante el Modelo Entidad-Relación (MER) la operación de vuelos de un
 
 ![Diagrama](captura.png)
 
-Atributo agregado para llegar al id más 5: `anio_fabricacion` (Avión).
-
 ---
 
 ## Normalización
