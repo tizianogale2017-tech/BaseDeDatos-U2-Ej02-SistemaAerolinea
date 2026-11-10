@@ -53,3 +53,9 @@ Se normaliza el documento `Vuelo` con sus registros de `Tripulacion`. En todas l
 **3FN.** Los datos de `Avion` dependen de su propio identificador y no de la PK de vuelo, así que pasan a tablas aparte. En el modelo final cada tabla usa su id propio.
 
 ![3FN](normalizacion/03-3fn.png)
+
+---
+
+## SQL
+
+El script `script.sql` crea las tablas con sus claves primarias y foráneas y carga datos de ejemplo. Está probado en SQLite (con `PRAGMA foreign_keys = ON;`).
